@@ -23,7 +23,7 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
-	_, _ = fmt.Fprintf(w, "Hello, world!\n")
+	_, _ = fmt.Fprintf(w, "Hello, world\n")
 	_, _ = fmt.Fprintf(w, "Version: 1.0.0\n")
 	_, _ = fmt.Fprintf(w, "Hostname: %s\n", host)
 }
